@@ -1,9 +1,6 @@
 package com.achwi.domain.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = Medication.tableName)
@@ -20,6 +17,7 @@ public class Medication {
     @Column(name = "DESCRIPTION")
     private String description;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "UNIT")
-    private String unit;
+    private Unit unit;
 }
