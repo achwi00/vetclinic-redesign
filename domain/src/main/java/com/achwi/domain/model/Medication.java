@@ -2,6 +2,10 @@ package com.achwi.domain.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a medication that can be prescribed. Maps to the MEDICATION table in the database.
+ * Each medication has a unit (e.g. ML, MG) describing the measurement type.
+ */
 @Entity
 @Table(name = Medication.tableName)
 public class Medication {
