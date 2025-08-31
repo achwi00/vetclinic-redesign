@@ -4,27 +4,27 @@ databaseChangeLog:
       author: achwi00
       changes:
         - createTable:
-            tableName: medication
+            tableName: MEDICATION
             columns:
               - column:
-                  name: id
+                  name: ID
                   type: BIGINT AUTO_INCREMENT
                   constraints:
                     primaryKey: true
               - column:
-                  name: name
+                  name: NAME
                   type: VARCHAR(255)
                   constraints:
                     nullable: true
                     unique: false
               - column:
-                  name: description
+                  name: DESCRIPTION
                   type: VARCHAR(500)
                   constraints:
                     nullable: false
                     unique: false
               - column:
-                  name: unit
+                  name: UNIT
                   type: VARCHAR(10)
                   constraints:
                     nullable: false
