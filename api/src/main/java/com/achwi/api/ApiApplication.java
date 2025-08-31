@@ -1,4 +1,4 @@
-package com.achwi;
+package com.achwi.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
