@@ -7,9 +7,11 @@
         <groupId>com.achwi</groupId>
         <artifactId>vetclinic-redesign</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>api</artifactId>
+    <name>api</name>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -23,6 +25,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.achwi</groupId>
+            <artifactId>domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
+    <build>
+        <finalName>api</finalName>
+    </build>
 </project>
