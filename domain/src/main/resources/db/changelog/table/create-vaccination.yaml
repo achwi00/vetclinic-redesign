@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-vaccination
+      author: achwi00
+      changes:
+        - createTable:
+            tableName: VACCINATION
+            columns:
+              - column:
+                  name: SERVICE_ID
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: MEDICATION_ID
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
