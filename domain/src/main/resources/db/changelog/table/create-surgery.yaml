@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-surgery
+      author: achwi00
+      changes:
+        - createTable:
+            tableName: SURGERY
+            columns:
+              - column:
+                  name: SERVICE_ID
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false

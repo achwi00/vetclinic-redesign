@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-treatment
+      author: achwi00
+      changes:
+        - createTable:
+            tableName: TREATMENT
+            columns:
+              - column:
+                  name: SERVICE_ID
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: MEDICATION_ID
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: DOSE
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: NOTES
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+
