@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-service
+      author: achwi00
+      changes:
+        - createTable:
+            tableName: PET_GROUP
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT AUTO_INCREMENT
+                  constraints:
+                    primaryKey: true
+
+              - column:
+                  name: QUANTITY
+                  type: INT
+                  constraints:
+                    nullable: false

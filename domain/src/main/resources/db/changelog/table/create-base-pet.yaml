@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-base-pet
+      author: achwi00
+      changes:
+        - createTable:
+            tableName: BASE_PET
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT AUTO_INCREMENT
+                  constraints:
+                    primaryKey: true
+
+              - column:
+                  name: PET_KIND
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: OWNER_ID
+                  type: BIGINT
+
+              - column:
+                  name: NAME
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: ACTIVE
+                  type: BOOLEAN
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: SPECIES
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
