@@ -8,9 +8,10 @@ databaseChangeLog:
             columns:
               - column:
                   name: ID
-                  type: BIGINT AUTO_INCREMENT
+                  type: BIGINT
                   constraints:
                     primaryKey: true
+                    nullable: false
 
               - column:
                   name: BIRTH_DATE
@@ -24,4 +25,4 @@ databaseChangeLog:
 
               - column:
                   name: NEUTERED
-                  type: BOOL
+                  type: BOOLEAN

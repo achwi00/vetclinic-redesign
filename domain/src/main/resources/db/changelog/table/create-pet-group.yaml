@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: create-service
+      id: create-pet-group
       author: achwi00
       changes:
         - createTable:
@@ -8,9 +8,10 @@ databaseChangeLog:
             columns:
               - column:
                   name: ID
-                  type: BIGINT AUTO_INCREMENT
+                  type: BIGINT
                   constraints:
                     primaryKey: true
+                    nullable: false
 
               - column:
                   name: QUANTITY

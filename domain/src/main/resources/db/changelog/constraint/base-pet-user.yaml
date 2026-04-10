@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: base-pet-user
+      author: achwi00
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: BASE_PET
+            baseColumnNames: OWNER_ID
+            referencedTableName: USER
+            referencedColumnNames: ID
+            constraintName: fk_base_pet_owner

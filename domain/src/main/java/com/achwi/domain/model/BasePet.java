@@ -10,6 +10,7 @@ public abstract class BasePet {
     public static final String tableName = "BASE_PET";
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private Long id;
 
@@ -24,6 +25,6 @@ public abstract class BasePet {
     private Boolean active;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "SPECIES")
+    @Column(name = "SPECIES", nullable = false)
     private Species species;
 }
