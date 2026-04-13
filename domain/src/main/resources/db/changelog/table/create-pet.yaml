@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-pet
+      author: achwi00
+      changes:
+        - createTable:
+            tableName: PET
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: BIRTH_DATE
+                  type: DATE
+
+              - column:
+                  name: SEX
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: NEUTERED
+                  type: BOOLEAN

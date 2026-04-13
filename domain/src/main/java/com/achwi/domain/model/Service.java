@@ -7,16 +7,19 @@ import jakarta.persistence.*;
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "SERVICE_TYPE")
 public class Service {
-  public static final String tableName = "SERVICE";
+    public static final String tableName = "SERVICE";
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "ID")
-  private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
+    private Long id;
 
-  private String name;
+    @Column(name = "NAME")
+    private String name;
 
-  private String description;
+    @Column(name = "DESCRIPTION")
+    private String description;
 
-  private Long basePrice;
+    @Column(name = "BASE_PRICE")
+    private Long basePrice;
 }
