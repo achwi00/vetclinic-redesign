@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: treatment-service
+      author: achwi00
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: TREATMENT
+            baseColumnNames: SERVICE_ID
+            referencedTableName: SERVICE
+            referencedColumnNames: ID
+            constraintName: FK_TREATMENT_SERVICE
