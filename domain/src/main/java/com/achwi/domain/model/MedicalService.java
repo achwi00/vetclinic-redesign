@@ -5,10 +5,10 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = Service.tableName)
+@Table(name = MedicalService.tableName)
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "SERVICE_TYPE")
-public class Service {
+public class MedicalService {
     public static final String tableName = "SERVICE";
 
     @Id

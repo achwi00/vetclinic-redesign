@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @DiscriminatorValue("TREATMENT")
-public class Treatment extends Service {
+public class Treatment extends MedicalService {
     @ManyToOne
     @JoinColumn(name = "MEDICATION_ID", nullable = false)
     private Medication medication;
