@@ -2,6 +2,9 @@ package com.achwi.domain.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a vaccination service for administering preventive medication.
+ */
 @Entity
 @DiscriminatorValue("VACCINATION")
 public class Vaccination extends MedicalService {

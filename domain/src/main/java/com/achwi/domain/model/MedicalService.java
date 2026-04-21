@@ -1,9 +1,12 @@
 package com.achwi.domain.model;
 
 import jakarta.persistence.*;
-
 import java.math.BigDecimal;
 
+/**
+ * Base entity representing a medical service offered by the clinic.
+ * Acts as a parent for all specific service types such as treatments, vaccinations, and surgeries.
+ */
 @Entity
 @Table(name = MedicalService.tableName)
 @Inheritance(strategy = InheritanceType.JOINED)
