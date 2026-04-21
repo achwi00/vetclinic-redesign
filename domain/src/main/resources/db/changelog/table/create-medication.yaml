@@ -15,17 +15,14 @@ databaseChangeLog:
                   name: NAME
                   type: VARCHAR(255)
                   constraints:
-                    nullable: true
-                    unique: false
+                    nullable: false
               - column:
                   name: DESCRIPTION
                   type: VARCHAR(500)
                   constraints:
                     nullable: false
-                    unique: false
               - column:
                   name: UNIT
                   type: VARCHAR(10)
                   constraints:
                     nullable: false
-                    unique: true

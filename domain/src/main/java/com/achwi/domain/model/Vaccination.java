@@ -1,13 +1,14 @@
 package com.achwi.domain.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
+/**
+ * Represents a vaccination service for administering preventive medication.
+ */
 @Entity
 @DiscriminatorValue("VACCINATION")
-public class Vaccination extends Service {
+public class Vaccination extends MedicalService {
   @ManyToOne
+  @JoinColumn(name = "MEDICATION_ID", nullable = false)
   private Medication medication;
 }

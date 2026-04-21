@@ -1,16 +1,8 @@
-
 databaseChangeLog:
   - changeSet:
-      id: vaccination-fk
+      id: vaccination-medication
       author: achwi00
       changes:
-        - addForeignKeyConstraint:
-            baseTableName: VACCINATION
-            baseColumnNames: SERVICE_ID
-            referencedTableName: SERVICE
-            referencedColumnNames: ID
-            constraintName: FK_VACCINATION_SERVICE
-
         - addForeignKeyConstraint:
             baseTableName: VACCINATION
             baseColumnNames: MEDICATION_ID

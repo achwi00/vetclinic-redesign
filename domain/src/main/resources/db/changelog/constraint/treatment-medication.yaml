@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: treatment-medication
+      author: achwi00
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: TREATMENT
+            baseColumnNames: MEDICATION_ID
+            referencedTableName: MEDICATION
+            referencedColumnNames: ID
+            constraintName: FK_TREATMENT_MEDICATION
