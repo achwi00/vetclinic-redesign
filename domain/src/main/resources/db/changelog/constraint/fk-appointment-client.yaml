@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: fk-appointment-client
+      author: achwi00
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: APPOINTMENT
+            baseColumnNames: CLIENT_ID
+            referencedTableName: USER
+            referencedColumnNames: ID
+            constraintName: FK_APPOINTMENT_CLIENT

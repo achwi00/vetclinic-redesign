@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: fk-appointment-base-pet
+      author: achwi00
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: APPOINTMENT
+            baseColumnNames: BASE_PET_ID
+            referencedTableName: BASE_PET
+            referencedColumnNames: ID
+            constraintName: FK_APPOINTMENT_BASE_PET
