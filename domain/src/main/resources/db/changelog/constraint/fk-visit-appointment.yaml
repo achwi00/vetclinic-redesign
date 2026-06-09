@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: fk-visit-appointment
+      author: achwi00
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: VISIT
+            baseColumnNames: APPOINTMENT_ID
+            referencedTableName: APPOINTMENT
+            referencedColumnNames: ID
+            constraintName: FK_VISIT_APPOINTMENT

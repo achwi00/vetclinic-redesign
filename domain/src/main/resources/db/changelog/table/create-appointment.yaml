@@ -1,0 +1,54 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-appointment
+      author: achwi00
+      changes:
+        - createTable:
+            tableName: APPOINTMENT
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT AUTO_INCREMENT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: SCHEDULED_AT
+                  type: TIMESTAMP
+
+              - column:
+                  name: STATUS
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: DURATION_IN_MINUTES
+                  type: INT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: BASE_PET_ID
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: VET_ID
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: CLIENT_ID
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: REASON
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
