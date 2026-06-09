@@ -46,3 +46,9 @@ databaseChangeLog:
                   type: BIGINT
                   constraints:
                     nullable: false
+
+              - column:
+                  name: REASON
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false

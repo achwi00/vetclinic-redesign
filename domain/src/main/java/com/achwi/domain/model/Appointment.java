@@ -39,4 +39,8 @@ public class Appointment {
 
     @Column(name = "DURATION_IN_MINUTES", nullable = false)
     private Integer durationInMinutes = 30;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "REASON", nullable = false, length = 20)
+    private AppointmentReason reason;
 }
